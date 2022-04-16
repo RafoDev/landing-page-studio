@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Langing Page Studio</title>
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-container">
+			<figure class="header__logo-container">
+				<img src="#" alt="" class="header__logo">
+			</figure>
+			<nav class="header__menu">
+				<ul class="header__menu-link-list">
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">
+							Inicio
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-link-list">
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">
+							Proyectos
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-link-list">
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">
+							Equipo
+						</a>
+					</li>
+				</ul>
+				<ul class="header__menu-link-list">
+					<li class="header__menu-item">
+						<a href="#" class="header__menu-link">
+							Contacto
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="main">
+		<section class="inicio">
+			<div class="inicio-container">
+				<h1 class="inicio__title">Titulo</h1>
+				<h2 class="inicio__subtitle">Subtítulo</h2>
+				<a href="#" class="inicio__button">Contáctanos</a>
+			</div>
+		</section>
+		<section class="servicios">
+			<div class="servicios-container">
+				<h2 class="servicios__title">Servicios</h3>
+				<h3 class="servicios__subtitle">Lorem ipsum dolor sit..</h3>
+				<p class="servicios__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident alias laboriosam iure facere pariatur dolorum magnam rerum aspernatur debitis!</p>
+				<a href="#" class="servicios__boton">Tarifas y precios</a>
+			</div>
+		</section>
+		<section class="proyectos">
+			<div class="proyectos-container">
+				<p class="proyectos__title">
+					Proyectos
+				</p>
+				<!-- Control buttons -->
+				<div id="proyectos__button-container" class="proyectos__button-container">
+					<button class="btn active" onclick="filterSelection('all')"> Todos</button>
+					<button class="btn" onclick="filterSelection('react-js')"> REACT-JS</button>
+					<button class="btn" onclick="filterSelection('angular')"> ANGULAR</button>
+					<button class="btn" onclick="filterSelection('vue')"> VUE</button>
+					<button class="btn" onclick="filterSelection('django')"> DJANGO</button>
+				</div>
+				<div class="proyectos__proyects-container">
+					<article class="proyectos__card filterArticle react-js">
+						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
+						<div class="proyectos__info">
+							<div class="proyectos__description">
+								<p class="proyectos__title">Título del proyecto react</p>
+								<p class="proyectos__subtitle">Subtítulo</p>
+							</div>
+							<a href="#" class="proyectos__boton">Ver más</a>
+						</div>
+					</article>
+					<article class="proyectos__card filterArticle angular">
+						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
+						<div class="proyectos__info">
+							<div class="proyectos__description">
+								<p class="proyectos__title">Título del proyecto react</p>
+								<p class="proyectos__subtitle">Subtítulo</p>
+							</div>
+							<a href="#" class="proyectos__boton">Ver más</a>
+					</article>
+					<article class="proyectos__card filterArticle vue">
+						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
+						<div class="proyectos__info">
+							<div class="proyectos__description">
+								<p class="proyectos__title">Título del proyecto react</p>
+								<p class="proyectos__subtitle">Subtítulo</p>
+							</div>
+							<a href="#" class="proyectos__boton">Ver más</a>
+					</article>
+					<article class="proyectos__card filterArticle django">
+						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
+						<div class="proyectos__info">
+							<div class="proyectos__description">
+								<p class="proyectos__title">Título del proyecto react</p>
+								<p class="proyectos__subtitle">Subtítulo</p>
+							</div>
+							<a href="#" class="proyectos__boton">Ver más</a>
+					</article>
+				</div>
+			</div>
+		</section>
+		<section class="equipo">
+			<div class="equipo-container">
+				<h2 class="equipo__titulo">Equipo</h2>
+				<article class="equipo__miembro-container">
+					<img src="#" alt="Algún nombre" class="equipo__miembro-foto">
+					<div class="equipo__miembro-description">
+						<h2 class="equipo__miembro-nombre">Nombre del integrante</h2>
+						<h3 class="proyectos__subtitle">Descripción</h3>
+					</div>
+				</article>
+			</div>
+		</section>
+		<section class="cotizacion">
+			<h2 class="cotizacion__title">Cotización</h2>
+			<div class="cotizacion-container">
+				<article class="cotizacion-card">
+					<h2 class="cotizacion__card-title">ONE PAGE</h2>
+					<p class="cotizacion__card-price">1000$</p>
+					<ul class="cotizacion__card-especificaciones">
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+						<li class="cotizacion__especificacion">Lorem, ipsum dolor.</li>
+					</ul>
+					<a class="cotizacion__boton" href="#">Ver más</a>
+				</article>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer__information">
+				<article class="footer__contacto-container">
+					<h2 class="footer__contacto-title">Contacto</h2>
+					<h3 class="footer__contacto-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis.</h3>
+				</article>
+				<article class="footer__servicios-container">
+					<h2 class="footer__servicios-title">Servicios</h2>
+					<h3 class="footer__servicios-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis.</h3>
+				</article>
+			</div>
+		</div>
+		<form class="footer__form">
+			<h2 class="footer__form-title">Escríbenos</h2>
+			<input type="text" class="footer__form-input">
+			<button class="footer__form-boton">Enviar</button>
+		</form>
+
+		<nav class="footer__social-media-container">
+			<ul class="footer__link-list">
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a></li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a></li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a></li>
+			</ul>
+		</nav>
+		
+	</footer>
+
+	<script>
+		filterSelection("all")
+		function filterSelection(c) {
+			const x = document.getElementsByClassName("filterArticle");
+			if (c == "all") c = "";
+			// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+			for (let i = 0; i < x.length; i++) {
+				w3RemoveClass(x[i], "show");
+				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+			}
+		}
+
+		// Show filtered elements
+		function w3AddClass(element, name) {
+			var i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				if (arr1.indexOf(arr2[i]) == -1) {
+					element.className += " " + arr2[i];
+				}
+			}
+		}
+
+		// Hide elements that are not selected
+		function w3RemoveClass(element, name) {
+			let i, arr1, arr2;
+			arr1 = element.className.split(" ");
+			arr2 = name.split(" ");
+			for (i = 0; i < arr2.length; i++) {
+				while (arr1.indexOf(arr2[i]) > -1) {
+					arr1.splice(arr1.indexOf(arr2[i]), 1);
+				}
+			}
+			element.className = arr1.join(" ");
+		}
+
+		// Add active class to the current control button (highlight it)
+		const btnContainer = document.getElementById("proyectos__button-container");
+		const btns = btnContainer.getElementsByClassName("btn");
+		for (let i = 0; i < btns.length; i++) {
+			btns[i].addEventListener("click", function () {
+				const current = document.getElementsByClassName("active");
+				current[0].className = current[0].className.replace(" active", "");
+				this.className += " active";
+			});
+		}
+	</script>
+</body>
+
+</html>
