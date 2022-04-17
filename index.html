@@ -6,58 +6,72 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Langing Page Studio</title>
-	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="./css/header.css">
 	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
 
 </head>
 
-<body>
+<body class="body">
 	<header class="header">
-		<div class="header-container">
-			<figure class="header__logo-container">
-				<img src="#" alt="" class="header__logo">
-			</figure>
-			<nav class="header__menu">
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Inicio
-						</a>
-					</li>
-				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Proyectos
-						</a>
-					</li>
-				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Equipo
-						</a>
-					</li>
-				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Contacto
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
+		<nav class="header-nav">
+			<div class="header-nav__container">
+        <a href="#" class="header-nav__link-logo-container">
+          <img src="https://i.postimg.cc/Bv0NN80w/logo-cohete-2.jpg" alt="Logo de Landing Page Studio"
+            class="header-nav__link-logo">
+        </a>
+        <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+          <i class="bi bi-list"></i>
+        </label>
+        <input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox">
+        <ul class="header-nav__menu-link-list">
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item1">
+            <a href="#inicio" class="header-nav__menu-link header-nav__menu-link--item1">
+              Inicio
+							<input type="checkbox" class="header-nav__menu-link-checkbox">
+            </a>
+          </li>
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item2">
+            <a href="#servicios" class="header-nav__menu-link header-nav__menu-link--item2">
+              Servicios
+            </a>
+          </li>
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item3">
+            <a href="#proyectos" class="header-nav__menu-link header-nav__menu-link--item3">
+            	Proyectos
+            </a>
+          </li>
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item4">
+            <a href="#equipo" class="header-nav__menu-link header-nav__menu-link--item4">
+            	Equipo
+            </a>
+          </li>
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item5">
+            <a href="#cotizacion" class="header-nav__menu-link header-nav__menu-link--item5">
+            	Cotización
+            </a>
+          </li>
+          <li class="header-nav__menu-link-item header-nav__menu-link-item--item6">
+            <a href="#contacto" class="header-nav__menu-link header-nav__menu-link--active 
+							header-nav__menu-link--item6">
+            	Contacto
+            </a>
+          </li>
+        </ul>          
+      </div>
+		</nav>
 	</header>
 	<main class="main">
-		<section class="inicio">
+		<section class="inicio" id="inicio">
 			<div class="inicio-container">
 				<h1 class="inicio__title">Titulo</h1>
 				<h2 class="inicio__subtitle">Subtítulo</h2>
 				<a href="#" class="inicio__button">Contáctanos</a>
 			</div>
 		</section>
-		<section class="servicios">
+		<section class="servicios" id="servicios">
 			<div class="servicios-container">
 				<h2 class="servicios__title">Servicios</h3>
 				<h3 class="servicios__subtitle">Lorem ipsum dolor sit..</h3>
@@ -65,7 +79,7 @@
 				<a href="#" class="servicios__boton">Tarifas y precios</a>
 			</div>
 		</section>
-		<section class="proyectos">
+		<section class="proyectos" id="proyectos">
 			<div class="proyectos-container">
 				<p class="proyectos__title">
 					Proyectos
@@ -119,7 +133,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="equipo">
+		<section class="equipo" id="equipo">
 			<div class="equipo-container">
 				<h2 class="equipo__titulo">Equipo</h2>
 				<article class="equipo__miembro-container">
@@ -131,7 +145,7 @@
 				</article>
 			</div>
 		</section>
-		<section class="cotizacion">
+		<section class="cotizacion" id="cotizacion">
 			<h2 class="cotizacion__title">Cotización</h2>
 			<div class="cotizacion-container">
 				<article class="cotizacion-card">
@@ -151,7 +165,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="contacto">
 		<div class="footer-container">
 			<div class="footer__information">
 				<article class="footer__contacto-container">
