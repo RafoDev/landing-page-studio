@@ -3,9 +3,6 @@ const $options = document.querySelector(
 ).children;
 const $item = document.querySelector(".proyectos__gallery").children;
 
-console.log($options);
-console.log($item);
-
 for (let i = 0; i < $options.length; i++) {
     $options[i].addEventListener("click", function () {
         for (let j = 0; j < $options.length; j++) {
