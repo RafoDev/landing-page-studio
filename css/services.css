@@ -1,0 +1,125 @@
+.main{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.service{
+  max-width: 1080px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-container{
+  display: grid;
+  gap: 2rem;
+  background-color: beige;
+  width: 90%;
+  margin: auto;
+  
+}
+
+.service-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  background-color: #F8B195;
+  transition: all 1s ease-in-out;
+  border: aqua 1px solid;
+  box-sizing: border-box;
+}
+.service-content:hover{
+  box-shadow:
+    0 0 0 0.125rem #00ffff,
+    0 0 0 0.25rem #00ffff,
+    0 0 0.5rem 0 #2f2e2e,
+    0 0 0.75rem 0 #2f2e2e;
+}
+.service__img-container{
+  width: 100%;
+}
+
+.service__img{
+  width:100%;
+}
+
+.service__title{
+  margin: 0;
+  color: #355C7D;
+}
+.service__description{
+  color: #6C5B7B;
+  margin: 0;
+}
+
+.service__boton{
+  padding: 1.5rem;
+  background-color: #F67280;
+  border-radius: 50%;
+  text-decoration: none;
+  color:rgb(53, 50, 50);
+}
+
+.cotizacion{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.cotizacion__title{
+  margin: 0;
+}
+.cotizacion-container{
+  display: flex;
+  gap: 2rem;
+  padding:2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cotizacion__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ECF0F1;
+  border: 1px dashed black;
+  padding: 0.8rem;
+}
+
+.cotizacion__card-title{
+  padding: 1rem;
+  margin: 0;
+}
+.cotizacion__card-price{
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cotizacion__card-especificaciones{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+}
+.cotizacion__especificacion{
+  list-style-type:square;
+  color: #4747f7;
+}
+.cotizacion__boton{
+  color: #355C7D;
+  text-decoration: none;
+  background-color: #F67280;
+  border-radius: 60%;
+  padding: 1.5rem;
+}
+@media (min-width:854px){
+.service-container{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+}
