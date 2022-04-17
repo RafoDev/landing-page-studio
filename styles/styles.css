@@ -1,4 +1,7 @@
-@import url(./css/services.css);
+@import url(./services.css);
+@import url(./proyectos.css);
+@import url(./equipo.css);
+@import url(./footer.css);
 /*
 .proyectos__proyects-container {
     display: flex;

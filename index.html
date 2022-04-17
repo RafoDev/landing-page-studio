@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Langing Page Studio</title>
-	<link rel="stylesheet" href="styles.css">
-	<link rel="stylesheet" href="./css/equipo.css">
-	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="styles/styles.css">
 	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 
-<body class="body">
+<body>
 	<!-- <header class="header">
 		<div class="header-container">
 			<figure class="header__logo-container">
@@ -68,7 +68,8 @@
 							src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg" alt="">
 					</figure>
 					<h2 class="service__title">Diseño de Paginas Web</h3>
-						<p class="service__description">Páginas Web exitosas mediante diseños creativos de alto impacto visual</p>
+						<p class="service__description">Páginas Web exitosas mediante diseños creativos de alto impacto
+							visual</p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
@@ -77,17 +78,20 @@
 							src="https://cdn.pixabay.com/photo/2021/09/03/11/04/success-6595539_960_720.png" alt="">
 					</figure>
 					<h2 class="service__title">Imagen Corporativa</h3>
-						<p class="service__description">Diseñamos la identidad corporativa de tu empresa con las nuevas tendencias
+						<p class="service__description">Diseñamos la identidad corporativa de tu empresa con las nuevas
+							tendencias
 							visuales</p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
 						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2019/04/07/23/11/search-engine-optimization-4111000_960_720.jpg" alt="">
+							src="https://cdn.pixabay.com/photo/2019/04/07/23/11/search-engine-optimization-4111000_960_720.jpg"
+							alt="">
 					</figure>
 					<h2 class="service__title">Posicionamiento SEO/SEM</h3>
-						<p class="service__description">Gestionamos las campañas de publicidad de tu empresa en los buscadores </p>
+						<p class="service__description">Gestionamos las campañas de publicidad de tu empresa en los
+							buscadores </p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
@@ -96,16 +100,19 @@
 							src="https://cdn.pixabay.com/photo/2018/01/14/23/05/ecommerce-3082813_960_720.jpg" alt="">
 					</figure>
 					<h2 class="service__title">E-Commerce</h3>
-						<p class="service__description">Desarrollamos tu tienda online para impulsar tus ventas en internet</p>
+						<p class="service__description">Desarrollamos tu tienda online para impulsar tus ventas en
+							internet</p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
 						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2018/02/17/17/54/content-marketing-3160470_960_720.jpg" alt="">
+							src="https://cdn.pixabay.com/photo/2018/02/17/17/54/content-marketing-3160470_960_720.jpg"
+							alt="">
 					</figure>
 					<h2 class="service__title">Marketing Digital</h3>
-						<p class="service__description">Estrategias para promocionar tu empresa a través de campañas digitales</p>
+						<p class="service__description">Estrategias para promocionar tu empresa a través de campañas
+							digitales</p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
@@ -114,78 +121,106 @@
 							src="https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg" alt="">
 					</figure>
 					<h2 class="service__title">Social Media</h3>
-						<p class="service__description">Gestión de campañas para promocionar tu marca en las diferentes redes sociales</p>
+						<p class="service__description">Gestión de campañas para promocionar tu marca en las diferentes
+							redes sociales</p>
 						<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
-
-
 			</div>
 		</section>
-		<!-- <section class="proyectos">
+		<section class="proyectos">
 			<div class="proyectos-container">
 				<p class="proyectos__title">
 					Proyectos
 				</p>
-				Control buttons
-				<div id="proyectos__button-container" class="proyectos__button-container">
-					<button class="btn active" onclick="filterSelection('all')"> Todos</button>
-					<button class="btn" onclick="filterSelection('react-js')"> REACT-JS</button>
-					<button class="btn" onclick="filterSelection('angular')"> ANGULAR</button>
-					<button class="btn" onclick="filterSelection('vue')"> VUE</button>
-					<button class="btn" onclick="filterSelection('django')"> DJANGO</button>
-				</div>
-				<div class="proyectos__proyects-container">
-					<article class="proyectos__card filterArticle react-js">
-						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
-						<div class="proyectos__info">
-							<div class="proyectos__description">
-								<p class="proyectos__title">Título del proyecto react</p>
-								<p class="proyectos__subtitle">Subtítulo</p>
+				<ul class="proyectos__button-container">
+					<li class="proyectos__button current" data-target="all">Todos</li>
+					<li class="proyectos__button" data-target="react">React</li>
+					<li class="proyectos__button" data-target="angular">Angular</li>
+					<li class="proyectos__button" data-target="vue">Vue</li>
+				</ul>
+				<div class="proyectos__gallery">
+					<article data-item="react" class="proyectos__gallery-item">
+						<img src="images/proyects/creatives.jpg" alt="We are creatives thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">We are creatives</p>
+								<p class="proyectos__gallery-item-subtitle">React + Next.js </p>
 							</div>
-							<a href="#" class="proyectos__boton">Ver más</a>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
 						</div>
 					</article>
-					<article class="proyectos__card filterArticle angular">
-						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
-						<div class="proyectos__info">
-							<div class="proyectos__description">
-								<p class="proyectos__title">Título del proyecto react</p>
-								<p class="proyectos__subtitle">Subtítulo</p>
+
+					<article data-item="react" class="proyectos__gallery-item">
+						<img src="images/proyects/gallery.jpg" alt="Algún nombre"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">Modern art gallery</p>
+								<p class="proyectos__gallery-item-subtitle">React + Django</p>
 							</div>
-							<a href="#" class="proyectos__boton">Ver más</a>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</div>
 					</article>
-					<article class="proyectos__card filterArticle vue">
-						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
-						<div class="proyectos__info">
-							<div class="proyectos__description">
-								<p class="proyectos__title">Título del proyecto react</p>
-								<p class="proyectos__subtitle">Subtítulo</p>
+					<article data-item="angular" class="proyectos__gallery-item">
+						<img src="images/proyects/experiences.jpg" alt="Immersive Experiencies that deliver thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">Immersive experiencies that deliver</p>
+								<p class="proyectos__gallery-item-subtitle">Angular + Spring</p>
 							</div>
-							<a href="#" class="proyectos__boton">Ver más</a>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</div>
 					</article>
-					<article class="proyectos__card filterArticle django">
-						<img src="#" alt="Algún nombre" class="proyectos__thumbnail">
-						<div class="proyectos__info">
-							<div class="proyectos__description">
-								<p class="proyectos__title">Título del proyecto react</p>
-								<p class="proyectos__subtitle">Subtítulo</p>
+					<article data-item="angular" class="proyectos__gallery-item">
+						<img src="images/proyects/keyboards.jpg" alt="Typemaster Keyboard thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">Typemaster Keyboard</p>
+								<p class="proyectos__gallery-item-subtitle">Angular + Laravel</p>
 							</div>
-							<a href="#" class="proyectos__boton">Ver más</a>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+					</article>
+					<article data-item="vue" class="proyectos__gallery-item">
+						<img src="images/proyects/meet.jpg" alt="Let's meet thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">Let's meet</p>
+								<p class="proyectos__gallery-item-subtitle">Vue + Express.js</p>
+							</div>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+					</article>
+					<article data-item="vue" class="proyectos__gallery-item">
+						<img src="images/proyects/sneakers.jpg" alt="Sneakers thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">Sneakers</p>
+								<p class="proyectos__gallery-item-subtitle">Vue + Django</p>
+							</div>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+					</article>
+					<article data-item="vue" class="proyectos__gallery-item">
+						<img src="images/proyects/space.jpg" alt="So, you want to travel to the space thumbnail"
+							class="proyectos__gallery-item-thumbnail">
+						<div class="proyectos__gallery-item-info">
+							<div class="proyectos__gallery-item-description">
+								<p class="proyectos__gallery-item-title">So, you want to travel to the space</p>
+								<p class="proyectos__gallery-item-subtitle">Vue + Laravel</p>
+							</div>
+							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
 					</article>
 				</div>
-			</div>
-<<<<<<< HEAD
 		</section>
 		<section class="equipo">
 			<h2 class="equipo__titulo">Equipo</h2>
-=======
-		</section> -->
-		<!-- <section class="equipo">
->>>>>>> dev-Joseph
 			<div class="equipo-container">
 				<article class="equipo__miembro-container">
-					<img src="./img/yo.jpg" alt="Mariela" class="equipo__miembro-foto">
-					<img src="./img/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
+					<img src="https://i.postimg.cc/90zm4QjS/yo.jpg" alt="Mariela" class="equipo__miembro-foto">
+					<img src="images/proyects/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre">Mariela Ingrid Rodriguez Gutierrez</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web, Marketing</h3>
@@ -193,8 +228,10 @@
 				</article>
 
 				<article class="equipo__miembro-container">
-					<img src="https://i.postimg.cc/Wp78jcs0/20200611-132456.jpg" alt="Rafo" class="equipo__miembro-foto">
-					<img src="https://i.postimg.cc/YSp25FR6/8bitpix.png" alt="Mariela" class="equipo__miembro-foto-hover">
+					<img src="https://i.postimg.cc/Wp78jcs0/20200611-132456.jpg" alt="Rafo"
+						class="equipo__miembro-foto">
+					<img src="https://i.postimg.cc/YSp25FR6/8bitpix.png" alt="Mariela"
+						class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre"> Rafael Alonso David Peñalva</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web</h3>
@@ -202,8 +239,9 @@
 				</article>
 
 				<article class="equipo__miembro-container">
-					<img src="https://i.postimg.cc/ZKK9d1pP/img20211007-15381691-1.jpg" alt="Joseph" class="equipo__miembro-foto">
-					<img src="./img/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
+					<img src="https://i.postimg.cc/ZKK9d1pP/img20211007-15381691-1.jpg" alt="Joseph"
+						class="equipo__miembro-foto">
+					<img src="./images/proyects/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre">Joseph Peñafiel Loayza</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web</h3>
@@ -211,15 +249,15 @@
 				</article>
 
 				<article class="equipo__miembro-container">
-					<img src="./img/yo.jpg" alt="Jair" class="equipo__miembro-foto">
-					<img src="./img/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
+					<img src="https://i.postimg.cc/90zm4QjS/yo.jpg" alt="Jair" class="equipo__miembro-foto">
+					<img src="images/proyects/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre"> Jair Rodriguez Alonso</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrollador web</h3>
 					</div>
 				</article>
 			</div>
-		</section> -->
+		</section>
 		<section class="cotizacion">
 			<h2 class="cotizacion__title">Cotización</h2>
 			<div class="cotizacion-container">
@@ -282,16 +320,18 @@
 			</div>
 		</section>
 	</main>
-	<!-- <footer class="footer">
+	<footer class="footer">
 		<div class="footer-container">
 			<div class="footer__information">
 				<article class="footer__contacto-container">
 					<h2 class="footer__contacto-title">Contacto</h2>
-					<h3 class="footer__contacto-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis.</h3>
+					<h3 class="footer__contacto-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Doloremque, blanditiis.</h3>
 				</article>
 				<article class="footer__servicios-container">
 					<h2 class="footer__servicios-title">Servicios</h2>
-					<h3 class="footer__servicios-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, blanditiis.</h3>
+					<h3 class="footer__servicios-description">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+						Doloremque, blanditiis.</h3>
 				</article>
 			</div>
 		</div>
@@ -303,63 +343,19 @@
 
 		<nav class="footer__social-media-container">
 			<ul class="footer__link-list">
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a></li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a></li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a></li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a></li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
+				</li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i
+							class="fa-brands fa-instagram"></i></a></li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+				</li>
+				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a>
+				</li>
 			</ul>
 		</nav>
-		
-</footer>
 
-	<script>
-		filterSelection("all")
-		function filterSelection(c) {
-			const x = document.getElementsByClassName("filterArticle");
-			if (c == "all") c = "";
-			// Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
-			for (let i = 0; i < x.length; i++) {
-				w3RemoveClass(x[i], "show");
-				if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-			}
-		}
-
-		// Show filtered elements
-		function w3AddClass(element, name) {
-			var i, arr1, arr2;
-			arr1 = element.className.split(" ");
-			arr2 = name.split(" ");
-			for (i = 0; i < arr2.length; i++) {
-				if (arr1.indexOf(arr2[i]) == -1) {
-					element.className += " " + arr2[i];
-				}
-			}
-		}
-
-		// Hide elements that are not selected
-		function w3RemoveClass(element, name) {
-			let i, arr1, arr2;
-			arr1 = element.className.split(" ");
-			arr2 = name.split(" ");
-			for (i = 0; i < arr2.length; i++) {
-				while (arr1.indexOf(arr2[i]) > -1) {
-					arr1.splice(arr1.indexOf(arr2[i]), 1);
-				}
-			}
-			element.className = arr1.join(" ");
-		}
-
-		// Add active class to the current control button (highlight it)
-		const btnContainer = document.getElementById("proyectos__button-container");
-		const btns = btnContainer.getElementsByClassName("btn");
-		for (let i = 0; i < btns.length; i++) {
-			btns[i].addEventListener("click", function () {
-				const current = document.getElementsByClassName("active");
-				current[0].className = current[0].className.replace(" active", "");
-				this.className += " active";
-			});
-		}
-	</script> -->
+	</footer>
+	<script type="text/javascript" src="scripts/galleryFilter.js"></script>
 </body>
 
 </html>
