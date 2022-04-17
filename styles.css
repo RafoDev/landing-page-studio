@@ -1,3 +1,5 @@
+@import url(./css/services.css);
+/*
 .proyectos__proyects-container {
     display: flex;
     flex-direction: row;
@@ -11,29 +13,33 @@
     text-align: center;
     margin: 2px;
     display: none;
-}
+}*/
 
 /* The "show" class is added to the filtered elements */
-.show {
+/* .show {
     display: block;
-}
+} */
 
 /* Style the buttons */
-.btn {
+/* .btn {
     border: none;
     outline: none;
     padding: 12px 16px;
     background-color: #f1f1f1;
     cursor: pointer;
-}
+} */
 
 /* Add a light grey background on mouse-over */
-.btn:hover {
+/* .btn:hover {
     background-color: #ddd;
 }
-
+ */
 /* Add a dark background to the active button */
-.btn.active {
+/* .btn.active {
     background-color: #666;
     color: white;
+} */
+.body{
+    margin: 0;
+    width: 100%;
 }
