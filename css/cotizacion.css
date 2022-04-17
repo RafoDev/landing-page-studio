@@ -1,0 +1,62 @@
+.cotizacion{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+
+.cotizacion__title{
+  margin: 0;
+  background-image: linear-gradient( 135deg, #52E5E7 10%, #130CB7 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.cotizacion-container{
+  display: flex;
+  gap: 2rem;
+  padding:2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cotizacion__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  background-color: #ECF0F1;
+  border: 1px dashed black;
+  padding: 0.8rem;
+  background-image: radial-gradient( circle 592px at 48.2% 50%,  rgba(255,255,249,0.6) 0%, rgba(160,199,254,1) 74.6% );
+}
+
+.cotizacion__card-title{
+  /* background-image: linear-gradient(); */
+  padding: 1rem;
+  margin: 0;
+}
+.cotizacion__card-price{
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.cotizacion__card-especificaciones{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 2rem;
+}
+.cotizacion__especificacion{
+  list-style-type:square;
+  color: #4747f7;
+}
+.cotizacion__boton{
+  color: #355C7D;
+  text-decoration: none;
+  background-color: #F67280;
+  border-radius: 60%;
+  padding: 1.5rem;
+}
