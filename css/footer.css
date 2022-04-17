@@ -1,0 +1,106 @@
+.footer {
+  margin: 0;
+}
+
+.footer-container {
+  display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+.footer__information {
+  display: flex;
+  text-align: center;
+}
+
+.footer__contacto-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.footer__contacto-title {
+
+}
+
+.footer__contacto-description {
+
+}
+
+.footer__servicios-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.footer__servicios-title {
+
+}
+
+.footer__servicios-description {
+
+}
+
+.footer__form {
+  text-align: center;
+}
+
+.footer__form-title {
+
+}
+
+.footer__form-input {
+
+}
+
+.footer__form-boton {
+
+}
+
+.footer__social-media-container {
+
+}
+
+.footer__link-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  gap:1rem
+}
+
+.footer__link-item {
+
+}
+
+.footer__link {
+
+}
+
+.fa-brands fa-facebook {
+
+}
+
+@media (min-width: 992px) {
+  .footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    max-width: 1080px;
+    margin: 0 auto;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: 
+    "information form"
+    "iconos iconos";
+  }
+  .footer__information {
+    grid-area: information;
+  }
+  .footer__form {
+    grid-area: form;
+  }
+  .footer__social-media-container {
+    grid-area: iconos;
+  }
+}
