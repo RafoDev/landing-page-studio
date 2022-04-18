@@ -158,7 +158,7 @@
 	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 854px) {
 	.proyectos__gallery-item {
 		cursor: pointer;
 	}

@@ -7,81 +7,196 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Langing Page Studio</title>
 	<link rel="stylesheet" href="styles/modules.css">
+
 	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+	<!-- Primary Meta Tags -->
+	<title>Langing Page Studio</title>
+	<meta name="title" content="Langing Page Studio">
+	<meta name="description" content="Los diseños y desarrollos de páginas web más impactantes del Perú.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://rafodev.github.io/landing-page-studio/">
+	<meta property="og:title" content="Langing Page Studio">
+	<meta property="og:description" content="Los diseños y desarrollos de páginas web más impactantes del Perú.">
+	<meta property="og:image" content="https://i.postimg.cc/1zt9GMkg/cover.jpg">
+
+	<!-- Twitter -->
+	<meta property="twitter:card" content="summary_large_image">
+	<meta property="twitter:url" content="https://rafodev.github.io/landing-page-studio/">
+	<meta property="twitter:title" content="Langing Page Studio">
+	<meta property="twitter:description" content="Los diseños y desarrollos de páginas web más impactantes del Perú.">
+	<meta property="twitter:image" content="https://i.postimg.cc/1zt9GMkg/cover.jpg">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
 </head>
 
 <body class="body">
-	<!-- <header class="header">
-		<div class="header-container">
-			<figure class="header__logo-container">
-				<img src="#" alt="" class="header__logo">
-			</figure>
-			<nav class="header__menu">
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Inicio
+	<header class="header">
+		<nav class="header-nav">
+			<div class="header-nav__container">
+				<a href="#" class="header-nav__link-logo-container">
+					<img src="https://i.postimg.cc/Bv0NN80w/logo-cohete-2.jpg" alt="Logo de Landing Page Studio"
+						class="header-nav__link-logo">
+				</a>
+				<label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+					<i class="bi bi-list"></i>
+				</label>
+				<input type="checkbox" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox">
+				<ul class="header-nav__menu-link-list">
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item1">
+						<a href="#inicio" class="header-nav__menu-link header-nav__menu-link--item1">
+							INICIO
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item2">
+						<a href="#servicios" class="header-nav__menu-link header-nav__menu-link--item2">
+							SERVICIOS
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item3">
+						<a href="#proyectos" class="header-nav__menu-link header-nav__menu-link--item3">
+							PROYECTOS
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item4">
+						<a href="#equipo" class="header-nav__menu-link header-nav__menu-link--item4">
+							EQUIPO
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item5">
+						<a href="#cotizacion" class="header-nav__menu-link header-nav__menu-link--item5">
+							COTIZACIÓN
+						</a>
+					</li>
+					<li class="header-nav__menu-link-item header-nav__menu-link-item--item6">
+						<a href="#contacto" class="header-nav__menu-link header-nav__menu-link--active 
+							header-nav__menu-link--item6">
+							CONTACTO
 						</a>
 					</li>
 				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Proyectos
-						</a>
-					</li>
-				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Equipo
-						</a>
-					</li>
-				</ul>
-				<ul class="header__menu-link-list">
-					<li class="header__menu-item">
-						<a href="#" class="header__menu-link">
-							Contacto
-						</a>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</header> -->
-	<main class="main">
-		<!-- <section class="inicio">
-			<div class="inicio-container">
-				<h1 class="inicio__title">Titulo</h1>
-				<h2 class="inicio__subtitle">Subtítulo</h2>
-				<a href="#" class="inicio__button">Contáctanos</a>
 			</div>
-		</section> -->
+		</nav>
+	</header>
+	<main class="main">
+		<article class="inicio" id="inicio">
+			<div class="inicio__container">
+				<div class="inicio__info-container">
+					<h2 class="inicio__info-title">
+						<span class="inicio__info-title-word">
+							<span class="inicio__info-title-letter" style="--letter: 'L'">L</span>
+							<span class="inicio__info-title-letter" style="--letter: 'A'">A</span>
+							<span class="inicio__info-title-letter" style="--letter: 'N'">N</span>
+							<span class="inicio__info-title-letter" style="--letter: 'D'">D</span>
+							<span class="inicio__info-title-letter" style="--letter: 'I'">I</span>
+							<span class="inicio__info-title-letter" style="--letter: 'N'">N</span>
+							<span class="inicio__info-title-letter" style="--letter: 'G'">G</span>
+						</span>
+						<span class="inicio__info-title-word">
+							<span class="inicio__info-title-letter" style="--letter: ''"></span>
+							<span class="inicio__info-title-letter" style="--letter: 'P'">P</span>
+							<span class="inicio__info-title-letter" style="--letter: 'A'">A</span>
+							<span class="inicio__info-title-letter" style="--letter: 'G'">G</span>
+							<span class="inicio__info-title-letter" style="--letter: 'E'">E</span>
+							<span class="inicio__info-title-letter" style="--letter: ''"></span>
+						</span>
+						<span class="inicio__info-title-word">
+							<span class="inicio__info-title-letter" style="--letter: 'E'">E</span>
+							<span class="inicio__info-title-letter" style="--letter: 'S'">S</span>
+							<span class="inicio__info-title-letter" style="--letter: 'T'">T</span>
+							<span class="inicio__info-title-letter" style="--letter: 'U'">U</span>
+							<span class="inicio__info-title-letter" style="--letter: 'D'">D</span>
+							<span class="inicio__info-title-letter" style="--letter: 'I'">I</span>
+							<span class="inicio__info-title-letter" style="--letter: 'O'">O</span>
+						</span>
+					</h2>
+					<h1 class="inicio__info-subtitle">Los diseños más impactantes y desarollos increíbles de páginas web
+						en Perú.</h1>
+					<p class="inicio__info-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+						vel hic est pariatur
+						reprehenderit. Asperiores minima voluptatibus accusamus nulla inventore libero quod
+						necessitatibus, distinctio blanditiis
+						adipisci doloremque omnis maxime iusto?</p>
+					<a href="#" class="inicio__info-link">Contáctanos</a>
+				</div>
+				<div class="inicio__figure">
+					<figure class="inicio__figure-image-container">
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo1">
+							<img src="./img/html.png" alt="Logo de HTML 5" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo2">
+							<img src="./img/css.png" alt="Logo de CSS" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo3">
+							<img src="./img/javascript.png" alt="Logo de javascript" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo4">
+							<img src="./img/react.png" alt="Logo de React" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo5">
+							<img src="./img/django.png" alt="Logo de Django" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo6">
+							<img src="./img/vue.png" alt="Vue" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo7">
+							<img src="./img/angular.png" alt="Logo de HTML 5" class=" inicio__figure-logo" />
+						</div>
+						<div class="inicio__figure-logo-container inicio__figure-logo-container--logo8">
+							<img src="https://logodownload.org/wp-content/uploads/2019/10/python-logo.png" alt="Logo de HTML 5"
+								class=" inicio__figure-logo" />
+						</div>
+
+					</figure>
+				</div>
+			</div>
+		</article>
 		<section class="service">
-			<h2 class="service__head-title">Servicios</h2>
+			<h2 class="service__head-title" id="servicios">Servicios</h2>
 			<div class="service-container">
 				<article class="service-content">
 					<figure class="service__img-container">
 						<img class="service__img"
 							src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_960_720.jpg" alt="">
 					</figure>
-					<h2 class="service__title">Diseño de Paginas Web</h3>
-						<p class="service__description">Páginas Web exitosas mediante diseños creativos de alto impacto
-							visual</p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
+					<h2 class="service__title">Diseño de Paginas Web</h2>
+					<p class="service__description">Páginas Web exitosas mediante diseños creativos de alto impacto
+						visual</p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
-						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2021/09/03/11/04/success-6595539_960_720.png" alt="">
+						<img class="service__img" src="https://cdn.pixabay.com/photo/2021/09/03/11/04/success-6595539_960_720.png"
+							alt="">
 					</figure>
-					<h2 class="service__title">Imagen Corporativa</h3>
-						<p class="service__description">Diseñamos la identidad corporativa de tu empresa con las nuevas
-							tendencias
-							visuales</p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
+					<h2 class="service__title">Imagen Corporativa</h2>
+					<p class="service__description">Diseñamos la identidad corporativa de tu empresa con las nuevas
+						tendencias
+						visuales</p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
@@ -89,41 +204,40 @@
 							src="https://cdn.pixabay.com/photo/2019/04/07/23/11/search-engine-optimization-4111000_960_720.jpg"
 							alt="">
 					</figure>
-					<h2 class="service__title">Posicionamiento SEO/SEM</h3>
-						<p class="service__description">Gestionamos las campañas de publicidad de tu empresa en los
-							buscadores </p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
+					<h2 class="service__title">Posicionamiento SEO/SEM</h2>
+					<p class="service__description">Gestionamos las campañas de publicidad de tu empresa en los
+						buscadores </p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
-						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2018/01/14/23/05/ecommerce-3082813_960_720.jpg" alt="">
-					</figure>
-					<h2 class="service__title">E-Commerce</h3>
-						<p class="service__description">Desarrollamos tu tienda online para impulsar tus ventas en
-							internet</p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
-				</article>
-				<article class="service-content">
-					<figure class="service__img-container">
-						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2018/02/17/17/54/content-marketing-3160470_960_720.jpg"
+						<img class="service__img" src="https://cdn.pixabay.com/photo/2018/01/14/23/05/ecommerce-3082813_960_720.jpg"
 							alt="">
 					</figure>
-					<h2 class="service__title">Marketing Digital</h3>
-						<p class="service__description">Estrategias para promocionar tu empresa a través de campañas
-							digitales</p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
+					<h2 class="service__title">E-Commerce</h2>
+					<p class="service__description">Desarrollamos tu tienda online para impulsar tus ventas en
+						internet</p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 				<article class="service-content">
 					<figure class="service__img-container">
 						<img class="service__img"
-							src="https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg" alt="">
+							src="https://cdn.pixabay.com/photo/2018/02/17/17/54/content-marketing-3160470_960_720.jpg" alt="">
 					</figure>
-					<h2 class="service__title">Social Media</h3>
-						<p class="service__description">Gestión de campañas para promocionar tu marca en las diferentes
-							redes sociales</p>
-						<a href="#" class="service__boton">Tarifas y precios</a>
+					<h2 class="service__title">Marketing Digital</h2>
+					<p class="service__description">Estrategias para promocionar tu empresa a través de campañas
+						digitales</p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
+				</article>
+				<article class="service-content">
+					<figure class="service__img-container">
+						<img class="service__img" src="https://cdn.pixabay.com/photo/2018/01/06/07/53/social-3064515_960_720.jpg"
+							alt="">
+					</figure>
+					<h2 class="service__title">Social Media</h2>
+					<p class="service__description">Gestión de campañas para promocionar tu marca en las diferentes
+						redes sociales</p>
+					<a href="#" class="service__boton">Tarifas y precios</a>
 				</article>
 			</div>
 		</section>
@@ -131,91 +245,94 @@
 			<h2 class="proyectos__title">
 				Proyectos
 			</h2>
-			<div class="proyectos-container">
-				<ul class="proyectos__button-container">
-					<li class="proyectos__button current" data-target="all">Todos</li>
-					<li class="proyectos__button" data-target="react">React</li>
-					<li class="proyectos__button" data-target="angular">Angular</li>
-					<li class="proyectos__button" data-target="vue">Vue</li>
-				</ul>
-				<div class="proyectos__gallery">
-					<article data-item="react" class="proyectos__gallery-item">
-						<img src="images/proyects/creatives.jpg" alt="We are creatives thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">We are creatives</p>
-								<p class="proyectos__gallery-item-subtitle">React + Next.js </p>
+			<section class="proyectos" id="proyectos">
+				<div class="proyectos-container">
+					<ul class="proyectos__button-container">
+						<li class="proyectos__button current" data-target="all">Todos</li>
+						<li class="proyectos__button" data-target="react">React</li>
+						<li class="proyectos__button" data-target="angular">Angular</li>
+						<li class="proyectos__button" data-target="vue">Vue</li>
+					</ul>
+					<div class="proyectos__gallery">
+						<article data-item="react" class="proyectos__gallery-item">
+							<img src="images/proyects/creatives.jpg" alt="We are creatives thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">We are creatives</p>
+									<p class="proyectos__gallery-item-subtitle">React + Next.js </p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
 							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-						</div>
-					</article>
+						</article>
 
-					<article data-item="react" class="proyectos__gallery-item">
-						<img src="images/proyects/gallery.jpg" alt="Algún nombre"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">Modern art gallery</p>
-								<p class="proyectos__gallery-item-subtitle">React + Django</p>
+						<article data-item="react" class="proyectos__gallery-item">
+							<img src="images/proyects/gallery.jpg" alt="Algún nombre" class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Modern art gallery</p>
+									<p class="proyectos__gallery-item-subtitle">React + Django</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
 							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-						</div>
-					</article>
-					<article data-item="angular" class="proyectos__gallery-item">
-						<img src="images/proyects/experiences.jpg" alt="Immersive Experiencies that deliver thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">Immersive experiencies that deliver</p>
-								<p class="proyectos__gallery-item-subtitle">Angular + Spring</p>
+						</article>
+						<article data-item="angular" class="proyectos__gallery-item">
+							<img src="images/proyects/experiences.jpg" alt="Immersive Experiencies that deliver thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Immersive experiencies that deliver</p>
+									<p class="proyectos__gallery-item-subtitle">Angular + Spring</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
 							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-						</div>
-					</article>
-					<article data-item="angular" class="proyectos__gallery-item">
-						<img src="images/proyects/keyboards.jpg" alt="Typemaster Keyboard thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">Typemaster Keyboard</p>
-								<p class="proyectos__gallery-item-subtitle">Angular + Laravel</p>
-							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-					</article>
-					<article data-item="vue" class="proyectos__gallery-item">
-						<img src="images/proyects/meet.jpg" alt="Let's meet thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">Let's meet</p>
-								<p class="proyectos__gallery-item-subtitle">Vue + Express.js</p>
-							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-					</article>
-					<article data-item="vue" class="proyectos__gallery-item">
-						<img src="images/proyects/sneakers.jpg" alt="Sneakers thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">Sneakers</p>
-								<p class="proyectos__gallery-item-subtitle">Vue + Django</p>
-							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-					</article>
-					<article data-item="vue" class="proyectos__gallery-item">
-						<img src="images/proyects/space.jpg" alt="So, you want to travel to the space thumbnail"
-							class="proyectos__gallery-item-thumbnail">
-						<div class="proyectos__gallery-item-info">
-							<div class="proyectos__gallery-item-description">
-								<p class="proyectos__gallery-item-title">So, you want to travel to the space</p>
-								<p class="proyectos__gallery-item-subtitle">Vue + Laravel</p>
-							</div>
-							<a href="#" class="proyectos__gallery-item-button">Ver más</a>
-					</article>
+						</article>
+						<article data-item="angular" class="proyectos__gallery-item">
+							<img src="images/proyects/keyboards.jpg" alt="Typemaster Keyboard thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Typemaster Keyboard</p>
+									<p class="proyectos__gallery-item-subtitle">Angular + Laravel</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/meet.jpg" alt="Let's meet thumbnail" class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Let's meet</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Express.js</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/sneakers.jpg" alt="Sneakers thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">Sneakers</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Django</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+						<article data-item="vue" class="proyectos__gallery-item">
+							<img src="images/proyects/space.jpg" alt="So, you want to travel to the space thumbnail"
+								class="proyectos__gallery-item-thumbnail">
+							<div class="proyectos__gallery-item-info">
+								<div class="proyectos__gallery-item-description">
+									<p class="proyectos__gallery-item-title">So, you want to travel to the space</p>
+									<p class="proyectos__gallery-item-subtitle">Vue + Laravel</p>
+								</div>
+								<a href="#" class="proyectos__gallery-item-button">Ver más</a>
+						</article>
+					</div>
 				</div>
+
+			</section>
 		</section>
-		<section class="equipo">
+
+		<section class="equipo" id="equipo">
 			<h2 class="equipo__titulo">Equipo</h2>
 			<div class="equipo-container">
 				<article class="equipo__miembro-container">
@@ -235,8 +352,7 @@
 				</article>
 
 				<article class="equipo__miembro-container">
-					<img src="https://i.postimg.cc/ZKK9d1pP/img20211007-15381691-1.jpg" alt="Joseph"
-						class="equipo__miembro-foto">
+					<img src="https://i.postimg.cc/ZKK9d1pP/img20211007-15381691-1.jpg" alt="Joseph" class="equipo__miembro-foto">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre">Joseph Peñafiel Loayza</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web</h3>
@@ -253,7 +369,7 @@
 				</article>
 			</div>
 		</section>
-		<section class="cotizacion">
+		<section class="cotizacion" id="cotizacion">
 			<h2 class="cotizacion__title">Cotización</h2>
 			<div class="cotizacion-container">
 				<article class="cotizacion__card">
@@ -315,7 +431,7 @@
 			</div>
 		</section>
 	</main>
-	<footer class="footer">
+	<footer class="footer" id="contacto">
 		<div class="footer-container">
 			<div class="footer__information">
 				<article class="footer__contacto-container">
@@ -334,13 +450,12 @@
 				<input type="text" class="footer__form-input" placeholder="Escribe tu email aquí">
 				<button class="footer__form-boton">Enviar</button>
 			</form>
-			
+
 			<nav class="footer__social-media-container">
 				<ul class="footer__link-list">
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
-				</li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i
-					class="fa-brands fa-instagram"></i></a></li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
+					</li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-instagram"></i></a></li>
 					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
 					</li>
 					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a>

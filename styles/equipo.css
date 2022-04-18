@@ -60,7 +60,7 @@
   font-size: var(--font-size-small);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 854px) {
   .equipo-container {
     flex-direction: row;
     flex-wrap: wrap;

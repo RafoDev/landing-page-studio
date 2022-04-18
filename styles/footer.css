@@ -1,4 +1,3 @@
-@import url(./variables.css);
 
 .footer {
   font-family: var(--font-family);
@@ -107,7 +106,7 @@
 
 }
 
-@media (min-width: 992px) {
+@media (min-width: 854px) {
   .footer-container{
     display: grid;
     justify-items: center;

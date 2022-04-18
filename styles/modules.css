@@ -1,3 +1,6 @@
+@import url(./header.css);
+@import url(./inicio.css);
+@import url(./variables.css);
 @import url(./services.css);
 @import url(./proyectos.css);
 @import url(./equipo.css);
