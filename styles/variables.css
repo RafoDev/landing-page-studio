@@ -1,9 +1,13 @@
 :root {
 	--bg-color: #2b303a;
-	--bg-color-2: #D9D9D9;
-	--primary-color: #e5eaed;
+	--bg-color-2: #dbdbdb;
+	--bg-color-3: #e7e2e2;
+	--bg-color-gradient:linear-gradient(180deg,
+	var(--bg-color-2) 0%,
+	var(--bg-color-3) 50%);
+	--primary-color: #e7e7e7;
 	--secondary-color: #5bc0eb;
-	--tertiary-color: #fff689;
+	--tertiary-color: #ffc914;
 	--gradient: linear-gradient(90deg,
 			var(--tertiary-color) 0%,
 			var(--secondary-color) 70%);
@@ -17,7 +21,7 @@
 	--box-shadow: 0px .5px 5px var(--shadow-color);
 	--box-shadow-hover: -5px 5px 10px var(--shadow-color);
 
-	--text-shadow:-1px .5px var(--shadow-color);
+	--text-shadow:-3px 3px 0px var(--shadow-color);
 	--font-size-big: 3rem;
 	--font-size-medium: 1.1rem;
 	--font-size-small: .9rem;

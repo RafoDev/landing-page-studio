@@ -1,15 +1,14 @@
-@import url(./variables.css);
-
 .service {
-    background-color: var(--bg-color);
+    background: var(--bg-color-gradient);
     width: 100%;
     text-align: center;
 }
-.service__head-title
-{
-    /* margin:1rem; */
+.service__head-title {
+    margin-bottom: 0;
     font-size: var(--font-size-big);
-	color: var(--font-light-color);
+    color: var(--font-dark-color);
+    position: relative;
+    text-shadow: var(--text-shadow);
 }
 
 .service-container {
@@ -29,13 +28,15 @@
     padding: var(--padding-items);
     align-items: center;
     text-align: center;
-    border-radius: .5rem;
+    /* border-radius: 0.5rem; */
     background-color: var(--primary-color);
     color: var(--font-dark-color);
     transition: box-shadow 0.25s ease-in-out;
+    box-shadow: var(--box-shadow);
+
 }
 .service-content:hover {
-    box-shadow: 0 0 5px var(--secondary-color), 0 0 10px var(--tertiary-color);
+    box-shadow: var(--box-shadow-hover);
 }
 .service__img-container {
     margin: 0;
@@ -54,12 +55,12 @@
 
 .service__boton {
     padding: var(--padding-buttons);
-    background-color: var(--secondary-color);
+    /* background-color: var(--secondary-color); */
     text-decoration: none;
     color: var(--font-dark-color);
-	text-shadow: var(--text-shadow);
-    box-shadow: var(--box-shadow);
-    transition: box-shadow .25s ease;
+    transition: box-shadow 0.25s ease;
+    box-shadow: -4px 4px 0px var(--secondary-color), 4px -4px 0px var(--tertiary-color);
+
 }
 .service__boton:hover {
     box-shadow: var(--box-shadow-hover);
@@ -67,16 +68,27 @@
 
 .cotizacion {
     background-color: var(--bg-color-2);
+    clip-path: polygon(
+        50% 0,
+        100% 0%,
+        100% 95%,
+        50% 100%,
+        50% 100%,
+        0 95%,
+        0 0%
+    );
     width: 100%;
     text-align: center;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 
 .cotizacion__title {
     /* margin:0; */
     margin-top: 3rem;
     font-size: var(--font-size-big);
-	color: var(--font-dark-color);
+    color: var(--font-dark-color);
+    text-shadow: var(--text-shadow);
+
 }
 .cotizacion-container {
     /* max-width: 1300px; */
@@ -97,7 +109,7 @@
     justify-content: space-evenly;
     align-items: center;
     gap: 1rem;
-    border: .2em dashed var(--shadow-color);
+    border: 0.2em dashed var(--shadow-color);
     padding: var(--padding-items);
 }
 
@@ -115,40 +127,33 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    gap: .5rem;
+    gap: 0.5rem;
     margin: 0;
     list-style: none;
 }
 .cotizacion__especificacion {
-
     position: relative;
-    padding-left: .5rem;
+    padding-left: 0.5rem;
     color: var(--font-dark-color);
 }
-.cotizacion__especificacion::before{
+.cotizacion__especificacion::before {
     position: absolute;
-    top:-.2em;
+    top: -0.2em;
     left: -1.5em;
     content: "👉";
-    color:inherit;
-    animation: pointer .5s infinite alternate running;
+    color: inherit;
+    animation: pointer 0.5s infinite alternate running;
 }
 
-
-.cotizacion__card:hover .cotizacion__especificacion::before
-{
-}
 
 @keyframes pointer {
-    0%{
+    0% {
         left: -1.5rem;
     }
-    100%{
+    100% {
         left: -1.8rem;
     }
-
 }
-
 
 .cotizacion__boton {
     color: var(--font-light-color);
@@ -156,9 +161,9 @@
     background-color: var(--secondary-color);
     padding: var(--padding-buttons);
     box-shadow: var(--box-shadow);
-    transition: box-shadow .25s ease;
+    transition: box-shadow 0.25s ease;
 }
-.cotizacion__boton:hover{
+.cotizacion__boton:hover {
     box-shadow: var(--box-shadow-hover);
 }
 

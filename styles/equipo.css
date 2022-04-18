@@ -1,11 +1,11 @@
 .equipo {
-  background-color: var(--bg-color);
+  background-color: #1A1D23;
   width: 100%;
   text-align: center;
 }
 
 .equipo-container {
-  padding-bottom: 2rem;
+  padding-bottom: 3rem;
   padding: var(--padding-container);
   display: flex;
   flex-direction: row;
@@ -14,7 +14,7 @@
   align-items: stretch;
   
   gap: 1rem;
-  max-width: 800px;
+  /* max-width: 800px; */
   margin:0 auto;
 }
 
@@ -22,6 +22,8 @@
   /* margin:1rem; */
   font-size: var(--font-size-big);
   color: var(--font-light-color);
+  text-shadow: var(--text-shadow);
+
 }
 
 .equipo__miembro-container {

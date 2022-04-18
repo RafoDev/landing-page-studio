@@ -21,6 +21,7 @@
 	text-align: center;
 	font-size: var(--font-size-big);
 	color: var(--font-dark-color);
+	text-shadow: var(--text-shadow);
 }
 
 .proyectos__button-container {
