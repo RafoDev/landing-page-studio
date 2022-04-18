@@ -41,6 +41,12 @@
 
 }
 
+.footer__menu-item {
+  list-style: none;
+  text-align: center;
+}
+
+
 .footer__form {
   text-align: center;
 }
