@@ -6,14 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Langing Page Studio</title>
-	<link rel="stylesheet" href="styles/styles.css">
+	<link rel="stylesheet" href="styles/modules.css">
 	<script src="https://kit.fontawesome.com/527ea01e39.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100;300;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="body">
 	<!-- <header class="header">
 		<div class="header-container">
 			<figure class="header__logo-container">
@@ -60,7 +60,7 @@
 			</div>
 		</section> -->
 		<section class="service">
-			<h2 class="service__head">Servicios</h2>
+			<h2 class="service__head-title">Servicios</h2>
 			<div class="service-container">
 				<article class="service-content">
 					<figure class="service__img-container">
@@ -128,10 +128,10 @@
 			</div>
 		</section>
 		<section class="proyectos">
+			<h2 class="proyectos__title">
+				Proyectos
+			</h2>
 			<div class="proyectos-container">
-				<p class="proyectos__title">
-					Proyectos
-				</p>
 				<ul class="proyectos__button-container">
 					<li class="proyectos__button current" data-target="all">Todos</li>
 					<li class="proyectos__button" data-target="react">React</li>
@@ -220,7 +220,6 @@
 			<div class="equipo-container">
 				<article class="equipo__miembro-container">
 					<img src="https://i.postimg.cc/90zm4QjS/yo.jpg" alt="Mariela" class="equipo__miembro-foto">
-					<img src="images/proyects/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre">Mariela Ingrid Rodriguez Gutierrez</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web, Marketing</h3>
@@ -228,20 +227,16 @@
 				</article>
 
 				<article class="equipo__miembro-container">
-					<img src="https://i.postimg.cc/Wp78jcs0/20200611-132456.jpg" alt="Rafo"
-						class="equipo__miembro-foto">
-					<img src="https://i.postimg.cc/YSp25FR6/8bitpix.png" alt="Mariela"
-						class="equipo__miembro-foto-hover">
+					<img src="https://i.postimg.cc/Wp78jcs0/20200611-132456.jpg" alt="Mariela" class="equipo__miembro-foto">
 					<div class="equipo__miembro-description">
-						<h2 class="equipo__miembro-nombre"> Rafael Alonso David Peñalva</h2>
-						<h3 class="equipo__miembro-subtitle">Desarrolladora Web</h3>
+						<h2 class="equipo__miembro-nombre">Rafael Alonso David Peñalva</h2>
+						<h3 class="equipo__miembro-subtitle">Desarrolladora Web, Marketing</h3>
 					</div>
 				</article>
 
 				<article class="equipo__miembro-container">
 					<img src="https://i.postimg.cc/ZKK9d1pP/img20211007-15381691-1.jpg" alt="Joseph"
 						class="equipo__miembro-foto">
-					<img src="./images/proyects/cara.jpg" alt="Mariela" class="equipo__miembro-foto-hover">
 					<div class="equipo__miembro-description">
 						<h2 class="equipo__miembro-nombre">Joseph Peñafiel Loayza</h2>
 						<h3 class="equipo__miembro-subtitle">Desarrolladora Web</h3>
@@ -334,26 +329,25 @@
 						Doloremque, blanditiis.</h3>
 				</article>
 			</div>
-		</div>
-		<form class="footer__form">
-			<h2 class="footer__form-title">Escríbenos</h2>
-			<input type="text" class="footer__form-input">
-			<button class="footer__form-boton">Enviar</button>
-		</form>
-
-		<nav class="footer__social-media-container">
-			<ul class="footer__link-list">
+			<form class="footer__form">
+				<h2 class="footer__form-title">Escríbenos</h2>
+				<input type="text" class="footer__form-input" placeholder="Escribe tu email aquí">
+				<button class="footer__form-boton">Enviar</button>
+			</form>
+			
+			<nav class="footer__social-media-container">
+				<ul class="footer__link-list">
 				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-facebook"></i></a>
 				</li>
 				<li class="footer__link-item"><a href="#" class="footer__link"><i
-							class="fa-brands fa-instagram"></i></a></li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
-				</li>
-				<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a>
-				</li>
-			</ul>
-		</nav>
-
+					class="fa-brands fa-instagram"></i></a></li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-twitter"></i></a>
+					</li>
+					<li class="footer__link-item"><a href="#" class="footer__link"><i class="fa-brands fa-youtube"></i></a>
+					</li>
+				</ul>
+			</nav>
+		</div>
 	</footer>
 	<script type="text/javascript" src="scripts/galleryFilter.js"></script>
 </body>

@@ -1,58 +1,61 @@
-
 .equipo {
-  background-color: bisque;
+  background-color: var(--bg-color);
+  width: 100%;
   text-align: center;
-  margin: 0;
 }
 
 .equipo-container {
+  padding-bottom: 2rem;
+  padding: var(--padding-container);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  
   gap: 1rem;
   max-width: 800px;
   margin:0 auto;
 }
 
 .equipo__titulo {
-  grid-area: 1/1/2/2;
-  padding: 2rem;
-  margin: 0;
-  margin: auto;
+  /* margin:1rem; */
+  font-size: var(--font-size-big);
+  color: var(--font-light-color);
 }
 
 .equipo__miembro-container {
   text-align: center;
   overflow: hidden;
   position: relative;
-	padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  height: 400px;
   width: 300px;
-}
-
-.equipo__miembro-container:hover .equipo__miembro-foto-hover {
-  opacity: 1;
 }
 
 .equipo__miembro-foto {
-  filter: grayscale();
+  filter: grayscale(1);
   height: 300px;
   width: 300px;
+  object-fit: cover;
+  transition: filter .75s ease;
+}
+
+.equipo__miembro-container:hover .equipo__miembro-foto {
+  filter: none;
 }
 
 .equipo__miembro-description {
-
+  color:var(--font-light-color);
 }
 
 .equipo__miembro-nombre {
-
+  font-size: var(--font-size-medium);
 }
 
 .equipo__miembro-subtitle {
-
+  font-size: var(--font-size-small);
 }
 
 @media (min-width: 992px) {

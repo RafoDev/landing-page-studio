@@ -1,0 +1,17 @@
+@import url(./services.css);
+@import url(./proyectos.css);
+@import url(./equipo.css);
+@import url(./footer.css);
+
+.body {
+    margin: 0;
+}
+
+.main{
+  width: 100%;
+	font-family: var(--font-family);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}

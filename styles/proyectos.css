@@ -1,46 +1,26 @@
-:root {
-	--bg-color: #2b303a;
-	--primary-color: #e5eaed;
-	--secondary-color: #5bc0eb;
-	--tertiary-color: #fff689;
-	--gradient: linear-gradient(90deg,
-			var(--tertiary-color) 0%,
-			var(--secondary-color) 70%);
-	--gradient-inverse: linear-gradient(90deg,
-			var(--secondary-color) 0%,
-			var(--tertiary-color) 70%);
-	--font-light-color: #fff;
-	--font-dark-color: rgb(37, 37, 37);
-	--font-family: "JetBrains Mono", monospace;
-	--shadow-color: #2b303a40;
-	--font-size-big: 3rem;
-	--font-size-medium: 1.1rem;
-	--font-size-small: .9rem;
-}
-
-body {
-	background-color: var(--bg-color);
-	margin: 0;
-}
 
 .proyectos {
-	font-family: var(--font-family);
+	background-color: var(--bg-color-2);
+	width: 100%;
 }
 
 .proyectos-container {
+	text-align: center;
+	padding-bottom: 2rem;
+	padding: var(--padding-container);
+
 	max-width: 1080px;
 	margin: 0 auto;
-	padding: 1rem;
 	display: flex;
-	text-align: center;
 	flex-direction: column;
 	justify-content: center;
 }
 
 .proyectos__title {
-	/* margin-bottom: 0; */
+	margin-bottom: 0;
+	text-align: center;
 	font-size: var(--font-size-big);
-	color: var(--font-light-color);
+	color: var(--font-dark-color);
 }
 
 .proyectos__button-container {
